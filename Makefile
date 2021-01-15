@@ -1,7 +1,7 @@
 CC			= gcc
 CFLAGS		= -Wall -Wextra -Werror
 RM			= rm -rf
-NAME		= createRT
+NAME		= convertRT
 
 INCS_DIR	= ./includes
 INCS		= $(addprefix includes/, libftfull.h obj_to_rt.h)
