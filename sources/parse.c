@@ -67,7 +67,6 @@ int			fill_vertex_and_faces(t_format *obj)
 {
 	int		fd;
 	char	*line;
-	int		is_readable;
 
 	fd = open(obj->file, O_RDONLY);
 	while (get_next_line(fd, &line) > 0)
