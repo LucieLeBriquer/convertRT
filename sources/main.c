@@ -18,6 +18,12 @@ static int	print_error(int err, int step)
 	return (-1);
 }
 
+static void	free_all(t_format obj)
+{
+	free(obj.vertex);
+	free(obj.face);
+}
+
 int			main(int argc, char **argv)
 {
 	t_format	obj;
@@ -34,5 +40,6 @@ int			main(int argc, char **argv)
 		return (print_error(0, 2));
 	if (create_obj(obj) < 0)
 		return (print_error(0, 3));
+	free_all(obj);
 	return (0);
 }
