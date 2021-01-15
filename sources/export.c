@@ -21,6 +21,8 @@ static void	write_double(int fd, double f)
 	write(fd, str1, ft_strlen(str1));
 	write(fd, ".", 1);
 	write(fd, str2, ft_strlen(str2));
+	free(str1);
+	free(str2);
 }
 
 static void	write_vertex(int fd, t_vertex vertex)
